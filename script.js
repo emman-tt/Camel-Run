@@ -63,6 +63,14 @@ document.addEventListener('keydown', function (key) {
     return
   }
 })
+document.addEventListener('click', function () {
+    player.classList.add('jump')
+    setTimeout(() => {
+      player.classList.remove('jump')
+    }, 1100)
+    return
+  
+})
 
 setInterval(function () {
   let villainPosition = villain.getBoundingClientRect()
