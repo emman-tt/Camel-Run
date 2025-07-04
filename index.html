@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camel Run</title>
+    <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <section id="background" class="background">    
+        <div id="inGameScore">Score</div> 
+        <div id="inGameHighScore">High Score :</div> 
+<dotlottie-player src="https://lottie.host/8664084c-f360-4d39-a172-7ea030fdccf8/4NMwgo4jta.lottie" background="transparent" speed="1" style="width: 200px; height: 200px; position: absolute;right: 50px;display: block;" id="day" loop autoplay></dotlottie-player>
+
+<dotlottie-player src="https://lottie.host/ef33f6e1-6e51-4c0a-a2ae-5f9f72c1eeb8/BwucFKd7bM.lottie" background="transparent" speed="1" id="night" style="width: 200px; height: 200px;position: absolute;left: 0;top: 0;display: none;" loop autoplay></dotlottie-player>
+
+        <section id="player"  class="player">
+<dotlottie-player src="https://lottie.host/06fe41f7-e5d9-4ad4-b522-989b7ab1b492/rYBd06jBvm.lottie" background="transparent" id="camel" speed="1" style="width: 84px; height:85px; position: absolute; bottom: 0; "    loop autoplay></dotlottie-player>
+        </section>
+
+        <section id="villain" class="villain">
+            <img src="./cactus-svgrepo-com.svg" id="cactus" width=50px height=85px >
+        </section>
+           <section id="info" class="info">
+    <div class="gameOver">Game over</div>
+    <section id="score">Score : </section>
+    <div id="button"><i id="restart" class="fa-solid fa-rotate"></i></div>
+</section>
+    </section>
+    
+
+    <div id="overlay" class="overlay"></div>
+
+ 
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+</body>
+
+
+
+</html>
